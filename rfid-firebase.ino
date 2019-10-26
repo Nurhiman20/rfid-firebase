@@ -8,7 +8,7 @@
 #define FIREBASE_AUTH "pTRnR3gKIlvakCbEFRoTFLveE1qJAat60A7ooVYD" 
 
 #define WIFI_SSID "azulgranas_id" 
-#define WIFI_PASSWORD "30297208"
+#define WIFI_PASSWORD "xxxxxxxxx"
 
 #define SS_PIN D4
 #define RST_PIN D2       // Configurable, see typical pin layout above
