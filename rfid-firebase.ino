@@ -4,8 +4,8 @@
 #include <SPI.h>
 #include <MFRC522.h>
 
-#define FIREBASE_HOST "sistem-kehadiran-rfid.firebaseio.com" 
-#define FIREBASE_AUTH "pTRnR3gKIlvakCbEFRoTFLveE1qJAat60A7ooVYD" 
+#define FIREBASE_HOST "xxxxxxxxxxxxxxxxxxxx" 
+#define FIREBASE_AUTH "xxxxxxxxxxxxxxxxxxx" 
 
 #define WIFI_SSID "azulgranas_id" 
 #define WIFI_PASSWORD "xxxxxxxxx"
