@@ -53,8 +53,18 @@ void loop() {
         // Serial.print(mfrc522.uid.uidByte[i], HEX);
         idCard = idCard + mfrc522.uid.uidByte[i];
       }
+
+      String pathNama = "attendance/" + idCard + "/nama";
+      String pathJabatan = "attendance/" + idCard + "/jabatan";
+
       Serial.print(idCard);
-      Firebase.pushString ("id-kartu", idCard); // push data card id to database
+      Serial.print(" ");
+      Serial.print(Firebase.getString(pathNama)); // get data from database
+      Serial.print(" (");
+      Serial.print(Firebase.getString(pathJabatan));  // get data from database
+      Serial.println(")");
+      
+      // Firebase.pushString ("id-kartu", idCard); // push data card id to database
       Serial.println();
       mfrc522.PICC_HaltA();
       idCard = "";
